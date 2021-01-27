@@ -1,0 +1,3 @@
+[submodule "packages/insights-chrome"]
+	path = packages/insights-chrome
+	url = https://github.com/redallen/insights-chrome.git

@@ -1,0 +1,13 @@
+{
+  "name": "insights-api",
+  "version": "0.0.0",
+  "description": "Mock of https://github.com/RedHatInsights/insights-rbac and https://github.com/RedHatInsights/entitlements-api-go",
+  "scripts": {
+    "start": "node api.js"
+  },
+  "author": "Red Hat",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
