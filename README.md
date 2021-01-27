@@ -2,7 +2,7 @@
 Run cloud.redhat.com locally. Uses keycloak in a docker container for auth and a mock API server for RBAC/Entitlements.
 
 ## Running
-1. `yarn install && git submodule update --init`
+1. `git submodule update --init && yarn install`
 2. `yarn build:chrome` (or for developing chrome, `yarn start:chrome`)
 3. `yarn start:backend`
 4. `yarn start:frontend`
