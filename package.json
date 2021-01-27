@@ -8,6 +8,7 @@
     "start:api": "yarn workspace insights-api start",
     "start:backend": "yarn start:auth && yarn start:api",
     "start:frontend": "yarn workspace insights-starter start",
+    "build:chrome": "yarn workspace insights-chrome build",
     "uninstall": "find . -name node_modules | xargs rm -rf"
   },
   "author": "Red Hat",
