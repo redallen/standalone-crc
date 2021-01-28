@@ -1,5 +1,10 @@
 #/bin/bash
 
+# For OSX
+realpath() {
+	[[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+}
+
 name='crc_keycloak'
 command="start $name"
 script=$(realpath -s $0)
