@@ -2,6 +2,9 @@
 
 name='crc_keycloak'
 command="start $name"
+script=$(realpath -s $0)
+scriptdir=$(dirname $script)
+echo $scriptdir
 
 # If container doesn't exist yet
 if ! docker ps --format '{{.Names}}' -a | grep -w $name &> /dev/null
@@ -12,7 +15,7 @@ then
     -e KEYCLOAK_USER=admin \
     -e KEYCLOAK_PASSWORD=admin \
     -e DB_VENDOR=h2 \
-    -v $(pwd)/realm_export.json:/tmp/realm_export.json \
+    -v $scriptdir/realm_export.json:/tmp/realm_export.json \
     -d \
     jboss/keycloak \
     -Dkeycloak.migration.action=import \
