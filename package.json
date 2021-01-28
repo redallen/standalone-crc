@@ -4,7 +4,7 @@
   "description": "Run crc locally!",
   "private": true,
   "scripts": {
-    "start:auth": "sudo ./packages/insights-auth/start_keycloak.sh",
+    "start:auth": "cd packages/insights-auth && ./start_keycloak.sh",
     "start:api": "yarn workspace insights-api start",
     "start:backend": "yarn start:auth && yarn start:api",
     "start:frontend": "yarn workspace insights-frontend-starter-app start",
