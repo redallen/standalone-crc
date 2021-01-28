@@ -4,7 +4,6 @@ name='crc_keycloak'
 command="start $name"
 script=$(realpath -s $0)
 scriptdir=$(dirname $script)
-echo $scriptdir
 
 # If container doesn't exist yet
 if ! docker ps --format '{{.Names}}' -a | grep -w $name &> /dev/null
