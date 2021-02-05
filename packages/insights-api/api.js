@@ -10,7 +10,8 @@ const services = [
   'settings',
   'smart_management',
   'subscriptions',
-  'user_preferences'
+  'user_preferences',
+  'internal'
 ];
 const entitlements = services.reduce((acc, cur) => {
   acc[cur] = { is_entitled: true, is_trial: false };
