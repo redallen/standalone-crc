@@ -35,5 +35,8 @@ const rbac = {
 
 app.get('/api/rbac/v1/access/', (_, res) => res.json(rbac));
 
+// Needed for whacky global nav visibility having baked-in cost_management logic
+app.get('/api/cost-management/v1/user-access', (_, res) => res.json({ data: true }));
+
 app.listen(3000, () => console.log('Listening on 3000'));
 
